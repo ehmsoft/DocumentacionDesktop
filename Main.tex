@@ -1,0 +1,69 @@
+\documentclass[letter,11pt,oneside,pdftex]{book}
+
+\usepackage{verbatim}
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{float}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[pdftex]{graphicx}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+
+\newcommand{\ehmsof}{ehmSoft}
+\newcommand{\softwareAbogadosDesktop}{Procesos judiciales versi\'on escritorio~}
+\newcommand{\softwareAbogadosMobile}{Procesos judiciales versi\'on m\'ovil~}
+\newcommand{\blackberryos}[1]{BlackBerry\textsuperscript{\textregistered}~#1}
+\newcommand{\blackberry}{BlackBerry\textsuperscript{\textregistered}~}
+\newcommand{\microsoft}{Microsoft\textsuperscript{\textregistered}~}
+\newcommand{\windows}{Windows\textsuperscript{\textregistered}~}
+\newcommand{\linux}{GNU/Linux\textsuperscript{\textregistered}~}
+\newcommand{\mac}{Mac\textsuperscript{\textregistered}~}
+\newcommand{\macos}[1]{Mac OS X\textsuperscript{\textregistered}~#1}
+\newcommand{\insertImage}[3]{
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.4]{./CapturasDePantalla/#1.png}
+\caption{#2}\label{fig:#3}
+\end{center}
+\end{figure}
+}
+
+\usepackage[pdftex,colorlinks]{hyperref}
+\hypersetup{linkcolor=black}
+
+\title{}
+\author{}
+\date{}
+
+\pdfinfo{%
+  /Title    ()
+  /Author   ()
+  /Creator  ()
+  /Producer ()
+  /Subject  ()
+  /Keywords ()
+}
+
+\begin{document}
+%\maketitle
+%\tableofcontents
+\thispagestyle{empty}
+\begin{figure}[c]
+\begin{center}
+\includegraphics[scale=0.3]{./CapturasDePantalla/logomanual.png}
+\end{center}
+\end{figure}
+\frontmatter
+\input{licencia}
+\input{intro}
+\tableofcontents
+\mainmatter
+\input{primerosPasos}
+\input{creandoLaInformacion}
+\input{consultandoLaInformacion}
+\input{miscelaneo}
+\input{preferencias}
+
+\end{document}
