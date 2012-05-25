@@ -16,12 +16,13 @@ caracter\'isticas de cada campo:
 \begin{description}
 \item[Juzgado:]Es una etiqueta no editable que muestra el juzgado
 seleccionado, para cambiarlo solamente haga click sobre este
-\footnote{Tambi\'en puede hacerlo desplegando el men\'u \blackberry y
-seleccionando \emph{cambiar}}
-e inmediatamente se le mostrar\'a un listado con los juzgados existentes del
-cual podr\'a seleccionar alguno. Este campo se considera obligatorio.
-\item[Fecha y fecha pr\'oxima:]Son campos de selecci\'on de fecha, para
-modificarlos haga click sobre el elemento que desea editar (la fecha o la hora).
+\footnotemark[\value{footnote}]
+e inmediatamente
+se le mostrar\'a un listado con los juzgados existentes del cual podr\'a
+seleccionar alguno.
+\item[Fecha y fecha pr\'oxima:]Son campos de selecci\'on de fecha, puede introducir la fecha manualmente por teclado o dar click en el peque\~no tri\'angulo del campo para desplegar un calendario donde podr\'a escoger la fecha deseada.
+
+El campo \emph{Fecha} como tal indica el momento donde se gener\'o la actuaci\'on o el estado judicial. El campo \emph{Fecha Pr\'oxima} indica el evento futuro asociado a la actuaci\'on actual, por ejemplo una audiencia programada para dentro de 2 meses. 
 \item[Descripci\'on:]Es un campo de texto en el cual usted describir\'a la
 nueva actuaci\'on. Este campo se considera obligatorio.
 \end{description}
@@ -45,22 +46,22 @@ Sit\'ue el cursor sobre el campo personalizado que desea eliminar y haga click d
 
 \subsection{Creando una cita}
 \label{sec:crearCita}
-Las actuaciones pueden contener citas, las cuales son agregadas al calendario
-de su dispositivo \blackberry, estas tienen la posibilidad de tener una alarma
+Las actuaciones pueden contener citas, las cuales son agregadas al calendario de la aplicaci\'on, estas tienen la posibilidad de tener una alarma
 con la la anticipaci\'on que usted desee.
 
-Despliegue el men\'u \blackberry y seleccione \emph{Agregar cita}, se mostrar\'a una
+Para agregar una cita de click la palabra \emph{Cita}, se mostrar\'a una
 pantalla en la que podr\'a modificar la descripci\'on o la fecha pr\'oxima,
 si selecciona el campo \emph{Alarma}, se activar\'a un campo adicional en el
 que podr\'a especificar la anticipaci\'on y en el siguiente campo la duraci\'on
 en minutos, horas o d\'ias. Cuando finalice presione \emph{Aceptar}
 \footnote{La cita solamente ser\'a agregada o modificada en el calendario cuando
-usted guarde la actuaci\'on}.
+usted guarde la actuaci\'on}.(Fig.\ref{fig:NuevaCitaActuacion}). 
+  
+\insertImage{Nuevos/Actuacion/NuevaCita}{Ventana para crear una cita}{NuevaCitaActuacion}
 
 \subsection{Modificando una cita}
 \label{sec:modificarCita}
-Si la actuaci\'on ya contiene una cita pero desea modificarla, desplegando el
-men\'u \blackberry encontrar\'a la opci\'on \emph{Modificar cita}, se
+Sit\'ue el cursor sobre el campo personalizado que desea modificar y haga click derecho, despu\'es seleccione \emph{Editar}, se
 mostrar\'a una pantalla similar a la usada en la creaci\'on de una cita (Ver.
 \ref{sec:crearCita}) en esta podr\'a modificar la informaci\'on de la cita
 y seleccionando aceptar confirmar\'a los cambios
@@ -68,7 +69,6 @@ y seleccionando aceptar confirmar\'a los cambios
 
 \subsection{Eliminando una cita}
 \label{sec:eliminarCita}
-Si la actuaci\'on ya contiene una cita pero desea eliminarla, desplegando el
-men\'u \blackberry encontrar\'a la opci\'on \emph{Eliminar cita}, se mostrar\'a
+Si la actuaci\'on ya contiene una cita pero desea eliminarla, simplemente desactive la casilla de verificaci\'on al lado derecho del texto \emph{Cita}, se mostrar\'a
 un di\'alogo de confirmaci\'on y la cita ser\'a eliminada
 \footnotemark[\value{footnote}].
